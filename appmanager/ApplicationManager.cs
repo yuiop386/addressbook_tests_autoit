@@ -17,7 +17,8 @@ namespace addressbook_tests_autoit
         public ApplicationManager()
         {
             aux = new AutoItX3();
-            aux.Run(@"C:\Users\MAfanasyev\Downloads\FreeAddressBookPortable\AddressBook.exe", "", aux.SW_SHOW);
+            aux.Run(@"C:\Users\MAfanasyev\Downloads\FreeAddressBookPortable\AddressBook.exe", "", aux.SW_SHOWMAXIMIZED);
+            aux.WinWait(WINTITLE);
             aux.WinActivate(WINTITLE);
             aux.WinWaitActive(WINTITLE);
 

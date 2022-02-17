@@ -8,8 +8,13 @@ namespace addressbook_tests_autoit
 {
     public class GroupData : IComparable<GroupData>, IEquatable<GroupData>
     {
-        public GroupData(string item)
+        public GroupData()
         {
+        }
+
+        public GroupData(string name)
+        {
+            this.Name = name;
         }
 
         public string Name { get; set; }

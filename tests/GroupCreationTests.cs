@@ -14,7 +14,7 @@ namespace addressbook_tests_autoit
 
             GroupData newGroup = new GroupData()
             { 
-                Name = "test"
+                Name = "TGC_created"
             };
 
             app.Groups.Add(newGroup);
@@ -25,7 +25,6 @@ namespace addressbook_tests_autoit
             newGroups.Sort();
 
             Assert.AreEqual(oldGroups, newGroups);
-
         }
     }
 }
